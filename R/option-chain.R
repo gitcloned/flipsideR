@@ -106,7 +106,7 @@ getOptionChain <- function(symbol, exchange = NA) {
   #
   url = sprintf(URL1, exchange, symbol)
   #
-  chain = tryCatch(fromJSON(fixJSON(getURL(url))), error = function(e) NULL)
+  chain = tryCatch(fromJSON(getURL(url)), error = function(e) NULL)
   #
   if (is.null(chain)) stop(sprintf("Retrieved document is not JSON. Try opening %s in your browser.", url))
   #
