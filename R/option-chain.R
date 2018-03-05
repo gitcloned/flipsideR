@@ -61,8 +61,8 @@ getOptionChainAsx <- function(symbol) {
 
 # URL templates
 #
-URL1 = 'http://www.google.com/finance/option_chain?q=%s%s&output=json'
-URL2 = 'http://www.google.com/finance/option_chain?q=%s%s&output=json&expy=%d&expm=%d&expd=%d'
+URL1 = 'http://finance.google.com/finance/option_chain?q=%s%s&output=json'
+URL2 = 'http://finance.google.com/finance/option_chain?q=%s%s&output=json&expy=%d&expm=%d&expd=%d'
 
 # Structure of JSON:
 #
